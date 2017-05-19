@@ -288,6 +288,7 @@ $(document).ready(function($) {
 
   //=================================== Slide Home =====================================//
 
-  $('#slide').camera({        
-    height: 'auto'
+$('#slide').camera({
+    height: '30%',        
+    thumbnails: true
   });  

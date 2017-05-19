@@ -1,3 +1,52 @@
+/* Camera Style Captions ----------------------------------*/
+
+/*.style-caption h1:before{
+   -webkit-transition-duration: 0.3s;
+  content: '';
+  right: -40px;
+  position: absolute;
+  top: -webkit-calc(50% - 40px);
+  top: 0;
+}*/
+
+.style-caption{
+	z-index: 9;
+}
+.style-caption h1{	
+	margin-top: 5%;
+	padding: 15px 20px;		
+	display: block;
+	max-width: 400px;
+	color: #fff;
+	font-size: 30px;
+	/*line-height: 52px;*/
+	color: #fff;	 
+	border-left: 5px solid #232323;
+	position: relative;
+}
+.style-caption p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 300;
+	max-width: 600px;
+	padding: 12px 20px;
+	background: #232323;
+	background: rgba(0,0,0,0.8);
+	margin: 20px 0;
+}
+.more .btn{
+	padding: 10px 30px;
+	font-size: 18px;
+	border:0;
+	border-radius:0;
+	border-right: 5px solid #232323;
+}
+.more .btn:hover{
+	opacity: 1;
+	border-right: 5px solid #232323;
+}
+
 /**************************
 *
 *	GENERAL
@@ -21,7 +70,7 @@
 .camera_wrap {
 	direction: ltr;
 	display: none;
-	float: left;
+	/*float: left;*/
 	position: relative;
 	z-index: 0;
 }
@@ -97,14 +146,14 @@
 	z-index: 2;
 }
 .camera_target_content .camera_link {
-    background: url(../images/blank.gif);
+    background: url(../img/slide/blank.gif);
 	display: block;
 	height: 100%;
 	text-decoration: none;
 }
 .camera_loader {
-    background: #fff url(../images/camera-loader.gif) no-repeat center;
-	background: rgba(255, 255, 255, 0.9) url(../images/camera-loader.gif) no-repeat center;
+    background: #fff url(../img/slide/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(../img/slide/camera-loader.gif) no-repeat center;
 	border: 1px solid #ffffff;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
@@ -173,7 +222,7 @@
 	z-index: 10;
 }
 .camera_prevThumbs div {
-	background: url(../images/camera_skins.png) no-repeat -160px 0;
+	background: url(../img/slide/camera_skins.png) no-repeat -160px 0;
 	display: block;
 	height: 40px;
 	margin-top: -20px;
@@ -192,7 +241,7 @@
 	z-index: 10;
 }
 .camera_nextThumbs div {
-	background: url(../images/camera_skins.png) no-repeat -190px 0;
+	background: url(../img/slide/camera_skins.png) no-repeat -190px 0;
 	display: block;
 	height: 40px;
 	margin-top: -20px;
@@ -292,7 +341,7 @@
 	left: 0;
 }
 .camera_prev > span {
-	background: url(../images/camera_skins.png) no-repeat 0 0;
+	background: url(../img/slide/camera_skins.png) no-repeat 0 0;
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -301,7 +350,7 @@
 	right: 0;
 }
 .camera_next > span {
-	background: url(../images/camera_skins.png) no-repeat -40px 0;
+	background: url(../img/slide/camera_skins.png) no-repeat -40px 0;
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -310,12 +359,12 @@
 	right: 41px;
 }
 .camera_commands > .camera_play {
-	background: url(../images/camera_skins.png) no-repeat -80px 0;
+	background: url(../img/slide/camera_skins.png) no-repeat -80px 0;
 	height: 40px;
 	width: 40px;
 }
 .camera_commands > .camera_stop {
-	background: url(../images/camera_skins.png) no-repeat -120px 0;
+	background: url(../img/slide/camera_skins.png) no-repeat -120px 0;
 	display: block;
 	height: 40px;
 	width: 40px;
@@ -394,34 +443,34 @@
 *
 **************************/
 .pattern_1 .camera_overlayer {
-	background: url(../images/patterns/overlay1.png) repeat;
+	background: url(../img/slide/patterns/overlay1.png) repeat;
 }
 .pattern_2 .camera_overlayer {
-	background: url(../images/patterns/overlay2.png) repeat;
+	background: url(../img/slide/patterns/overlay2.png) repeat;
 }
 .pattern_3 .camera_overlayer {
-	background: url(../images/patterns/overlay3.png) repeat;
+	background: url(../img/slide/patterns/overlay3.png) repeat;
 }
 .pattern_4 .camera_overlayer {
-	background: url(../images/patterns/overlay4.png) repeat;
+	background: url(../img/slide/patterns/overlay4.png) repeat;
 }
 .pattern_5 .camera_overlayer {
-	background: url(../images/patterns/overlay5.png) repeat;
+	background: url(../img/slide/patterns/overlay5.png) repeat;
 }
 .pattern_6 .camera_overlayer {
-	background: url(../images/patterns/overlay6.png) repeat;
+	background: url(../img/slide/patterns/overlay6.png) repeat;
 }
 .pattern_7 .camera_overlayer {
-	background: url(../images/patterns/overlay7.png) repeat;
+	background: url(../img/slide/patterns/overlay7.png) repeat;
 }
 .pattern_8 .camera_overlayer {
-	background: url(../images/patterns/overlay8.png) repeat;
+	background: url(../img/slide/patterns/overlay8.png) repeat;
 }
 .pattern_9 .camera_overlayer {
-	background: url(../images/patterns/overlay9.png) repeat;
+	background: url(../img/slide/patterns/overlay9.png) repeat;
 }
 .pattern_10 .camera_overlayer {
-	background: url(../images/patterns/overlay10.png) repeat;
+	background: url(../img/slide/patterns/overlay10.png) repeat;
 }
 .camera_caption {
 	color: #fff;
@@ -448,10 +497,10 @@
 .camera_pag_ul .thumb_arrow {
     border-top-color: #e6e6e6;
 }
-.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont {
+/*.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont {
 	background: #d8d8d8;
 	background: rgba(216, 216, 216, 0.85);
-}
+}*/
 .camera_wrap .camera_pag .camera_pag_ul li {
 	background: #b7b7b7;
 }

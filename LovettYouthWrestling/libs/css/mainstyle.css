@@ -70,24 +70,33 @@
 /* bootstrap.css  - include resetes ( Media querys, grid-responsive,layout).*/
 @import url("bootstrap.css");
 @import url("bootstrap-theme.css");
+
 /*Nav.css*/
 @import url("superfish.css");
+
 /*jquery.fancybox.css  - Lightbox*/
 @import url("jquery.fancybox.css");
-/*Style Switcher*/
+
+/*Style */
 @import url("theme-responsive.css");
+@import url("theme-options.css");
+
 /*Animations*/
 @import url("animate.css");
+
 /*carousel*/
 @import url("owl.carousel.css");
 @import url("owl.theme.default.css");
+
 /*flickr*/
 /*@import url("flickr/flickr.css");*/
 /*Icons Font-Awesome*/
 @import url("font-awesome.css");
 @import url("glyphicons.css");
+
 /*slide.css*/
 @import url("camera.css");
+
 /*Google font*/
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700");
 @import url("http://fonts.googleapis.com/css?family=Raleway");
@@ -108,6 +117,7 @@ body{
 	-webkit-text-size-adjust: 100%;
   	-ms-text-size-adjust: 100%;
   	text-size-adjust: 100%;
+    background-image: url(../img/bg-theme/10.png);
 }
 h1, h2, h3, h4, h5, h6 {	
 	padding: 5px 0 15px 0;	
@@ -392,129 +402,6 @@ iframe.video{
 	padding: 0;
 }
 
-/* Theme Options ---------------------------------------*/
-/* Backgrounds ----------------------------------------------------------*/
-
-.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont,
-.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span,
-.btn-primary,
-.btn-primary:hover,
-.style-caption h1,
-.nav-tabs li.active a,
-.nav-tabs li.active a:hover,
-.nav-tabs li a:hover,
-.title-color,
-.tags a:hover,
-.title-aside,
-.pagination .active,
-.info-player h4 a,
-.tooltip-inner,
-.portfolioFilter .current,
-.portfolioFilter a:hover,
-.owl-theme .owl-controls .owl-buttons div,
-#theme-options .layout-style li.active,
-.thumbs li:hover,
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	background: #0088cc; 
-	background-color: #0088cc; 
-}
-.footer-down{
-	background: #0088cc url("../img/img-theme/footer-down.png") repeat-x left 1px;
-}
-.events-carousel li .header-post .date{
-	background: #0088cc;  
-	background: rgba(0, 136, 204, 0.6);
-}
-
-/* Colors ----------------------------------------------------------*/
-
-blockquote > a,
-.tweet_time a,
-.tweet_text a,
-.tags i,
-.text-resalt,
-.post-item h4 a:hover,
-.post-item p a,
-.links li i,
-.entry-title a,
-.info-clubs h4 a:hover,
-.sf-menu .sf-mega ul li a:hover,
-.sf-menu li li a:hover,
-.crumbs ul li a:hover,
-.acc-trigger a:hover, .acc-trigger.active a, .acc-trigger.active a:hover,
-.crumbs li a,
-.page-error h1 i,
-.sitemap li a:hover,
-.pagination > li > a, .pagination > li > span,
-address i,
-.events-carousel h4 a,
-address a,
-.list li i{
-	color: #0088cc;
-}
-
-/* Borders ----------------------------------------------------------*/
-
-.nav-tabs li.active:after {
-	border: 6px solid #0088cc;
-	border-left-color: transparent;
-	border-right-color: transparent;
-	border-bottom-color: transparent;
-	bottom: -11px;
-	content: "";
-	left: 50%;
-	margin-left: -6px;
-	position: absolute;
-	z-index: 101;
-}
-.style-caption p,
-.item-clubs{
-	border-right: 5px solid #0088cc;	
-}
-.titles h4{
-	border-left: 5px solid #0088cc;
-}
-.pagination > .active > a,
-.pagination > .active:hover > a{
-	border-color: #0088cc;
-}
-.style-caption h1:before{
-	border-top: 40px solid transparent;
-	border-bottom: 40px solid transparent;
-	border-left: 40px solid #0088cc;
-}
-.crumbs:before{
-	border-bottom: 20px solid #0088cc;
-}
-.tooltip.top .tooltip-arrow {
-  border-top-color: #0088cc;
-}
-.sf-menu li:hover > .sf-mega,
-.sf-menu li.sfHover > .sf-mega,
-.mainmenu,
-.sf-menu .sub-current,
-.header-2,
-.header-2 .is-sticky{
-	border-bottom: 3px solid #0088cc;
-}
-header,
-.overlay-player,
-.crumbs{
-	border-top: 3px solid #0088cc;
-}
-.sf-arrows > li > .sf-with-ul:focus:after,
-.sf-arrows > li:hover > .sf-with-ul:after,
-.sf-arrows > .sfHover > .sf-with-ul:after {
-  border-top-color: #0088cc; /* IE8 fallback colour */
-}
-ul.sub-current .current  > .sf-with-ul:focus:after,
-ul.sub-current .current:hover > .sf-with-ul:after,
-ul.sub-current .current .sfHover > .sf-with-ul:after {
-  border-left-color: #0088cc; /* IE8 fallback colour */
-}
-/* END Theme Options ----------------------------------------------------*/
-
 /* List --------------------------------------------*/
 
 .list li{
@@ -541,18 +428,6 @@ ul.sub-current .current .sfHover > .sf-with-ul:after {
 /*  Header -------------------------------------------*/
 
 .site-name {
-    display: inline-block;
-    vertical-align: top;
-
-
-    padding: 8px 0;
-    position: relative;
-    margin-left: -25px;
-    padding-left: 25px;
-    padding-right: 25px; 
-
-
-    font-size: 3.125em;
     line-height: 1;
     color: #fff;
     font-family: "Helvetica W01 Blk", Arial, sans-serif;
@@ -562,23 +437,10 @@ ul.sub-current .current .sfHover > .sf-with-ul:after {
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s; 
 }
-
 .site-name a {
       color: #fff;
       text-shadow: 0.5px 0.9px 0 #4d7190; 
 }
-
-/*.site-info {
-  font-size: 3.125em;
-  line-height: 1;
-  color: #fff;
-  font-family: "Helvetica W01 Blk", Arial, sans-serif;
-  text-shadow: 0 1px 0 #4c7090;
-  float: left;
-  clear: none;
-  -webkit-transition: font-size 0.3s;
-  transition: font-size 0.3s; 
-}*/
 
 @media (min-width: 21.25em) {
     .site-name {   
@@ -588,7 +450,7 @@ ul.sub-current .current .sfHover > .sf-with-ul:after {
 @media (min-width: 50.0625em) {
     .site-name {
       font-size: 4.5em;
-      clear: both;
+      /*clear: both;*/
       padding: 0.375em 0 0; } 
 }
 .site-name .anchor {
@@ -608,7 +470,12 @@ ul.sub-current .current .sfHover > .sf-with-ul:after {
 .site-info__text .char {
       left: -.08em; 
 }*/
-
+/*.adds{
+	text-align: right;
+}
+.adds img{
+	display: inline;
+}*/
 
 header{	
     background-color: rgb(182,213,233);
@@ -619,12 +486,7 @@ header{
 .headerbox{
 	padding: 0 0 20px 0;
 }
-.adds{
-	text-align: right;
-}
-.adds img{
-	display: inline;
-}
+
 .mainmenu{
 	width: 100%;
 	min-height: 65px;
