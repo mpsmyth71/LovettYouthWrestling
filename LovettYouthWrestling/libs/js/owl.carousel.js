@@ -220,6 +220,9 @@
 		itemElement: 'div',
 		stageElement: 'div',
 
+		baseClass: "owl-carousel",
+		theme: "owl-theme",
+
 		refreshClass: 'owl-refresh',
 		loadedClass: 'owl-loaded',
 		loadingClass: 'owl-loading',

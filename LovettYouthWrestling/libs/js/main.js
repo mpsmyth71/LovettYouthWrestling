@@ -98,7 +98,7 @@ $(document).ready(function($) {
 
   //=================================== Counter  ==============================//
 
-   $('#event-one').countdown('2014/06/12', function(event) {
+   $('#event-one').countdown('2017/11/13', function(event) {
       var $this = $(this).html(event.strftime(''
       + '<span>%D <br> <small>days</small></span>  '
       + '<span>%H <br> <small>hr</small> </span>  '
@@ -123,87 +123,149 @@ $(document).ready(function($) {
  	
 	//=================================== Slide Services  ==============================//
 	 
-	$(".single-carousel").owlCarousel({
-		  items : 1,
-		  autoPlay: false,  
-    	navigation : true,
-    	autoHeight : true,
-    	slideSpeed : 400,
-    	singleItem: true,
-    	pagination : false
+   $(".single-carousel").owlCarousel({
+       loop: true,
+       autoplay: false,
+       autoplayTimeout: 3000,
+       items : 1,
+       nav: true,
+       autoHeight: true
 	});
 
   //=================================== Carousel Blog  ==================================//
 
-  $("#events-carousel").owlCarousel({
-       autoPlay: 3200,      
-       items : 3,
-       navigation: false,
-       itemsDesktop : [1199,3],
-       itemsDesktopSmall : [1024,3],
-       itemsTablet: [1000,2],
-       itemsMobile : [480,1],
-       pagination: true
-   });
+	$("#events-carousel").owlCarousel({
+	    loop: true,
+	    items: 3,
+        mouseDrag: true,
+        margin: 10,
+        dots: true,
+	    autoplay:true,
+	    autoplayTimeout: 3000,
+	    autoplayHoverPause: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	});
+
+	$('.owl-carousel .owl-item').on('mouseenter', function (e) {
+	    $(this).closest('.owl-carousel').trigger('stop.owl.autoplay');
+	})
+	$('.owl-carousel .owl-item').on('mouseleave', function (e) {
+	    $(this).closest('.owl-carousel').trigger('play.owl.autoplay', [500]);
+	})
 
   //=================================== Carousel Players  ==================================//
 
-   $("#players-carousel").owlCarousel({
-       autoPlay: 3200,      
-       items : 4,
-       navigation: false,
-       itemsDesktopSmall : [1024,3],
-       itemsTablet : [768,3],
-       itemsMobile : [600,2],
-       pagination: true
-   });
+	$("#players-carousel").owlCarousel({
+	    loop: true,
+	    items: 3,
+	    mouseDrag: true,
+	    margin: 10,
+	    dots: true,
+	    autoplay:true,
+	    autoplayTimeout: 3000,
+	    autoplayHoverPause: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	});
 
-  //=================================== Carousel Clubs  ==================================//
+	$('.owl-carousel .owl-item').on('mouseenter', function (e) {
+	    $(this).closest('.owl-carousel').trigger('stop.owl.autoplay');
+	})
+	$('.owl-carousel .owl-item').on('mouseleave', function (e) {
+	    $(this).closest('.owl-carousel').trigger('play.owl.autoplay', [500]);
+	})
 
-   $("#clubs-carousel").owlCarousel({
-       autoPlay: 3200,      
+  //=================================== Carousel Programs  ==================================//
+
+	$("#programs-carousel").owlCarousel({
+	   loop: true,
+       autoplay: true,
+       autoplayTimeout: 3000,
        items : 1,
-       navigation: false,
-       singleItem: true,
-       pagination: true
+       nav: false
    });
 
    //=================================== Carousel Sponsor  ==================================//
 
    $("#sponsors").owlCarousel({
-       autoPlay: 3200,      
-       items : 6,
-       navigation: false,
-       itemsDesktop : [1199,5],
-       itemsDesktopSmall : [1024,4],
-       itemsTablet : [768,3],
-       itemsMobile : [500,2],
-       pagination: true
+        loop: true,
+        items: 6,
+        mouseDrag: true,
+        margin: 10,
+        dots: true,
+        autoplay:true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            },
+            1200:{
+                items:5
+            }
+        }
    });
 
    //=================================== Carousel Testimonials  ============================//
 
-  $("#testimonials").owlCarousel({
-       autoPlay: 3200,      
-       items : 3,
-       navigation: false,
-       itemsDesktop : [1199,3],
-       itemsDesktopSmall : [1024,3],
-       itemsTablet : [1000,2],
-       itemsMobile : [600,1],
-       pagination: true
+   $("#testimonials").owlCarousel({
+       loop: true,
+       items: 3,
+       mouseDrag: true,
+       margin: 10,
+       dots: true,
+       autoplay:true,
+       autoplayTimeout: 3000,
+       autoplayHoverPause: true,
+       responsive: {
+           0: {
+               items: 1
+           },
+           600: {
+               items: 2
+           },
+           1000: {
+               items: 3
+           },
+           1200: {
+               items: 3
+           }
+       }
   });
 
 	//=================================== Carousel Twitter  ===============================//
 	 
-	$(".tweet_list").owlCarousel({
-		  items : 1,
-		  autoPlay: 3200,  
-    	navigation : false,
-    	autoHeight : true,
-    	slideSpeed : 400,
-    	singleItem: true,
-    	pagination : true
+   $(".tweet_list").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoHeight : true
 	});
 
 	//=================================== Subtmit Form  ===================================//
